@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="BrowserStackTestSuite" parallel="tests" thread-count="2">
+	<test name="Desktop_Chrome_Windows">
+		<parameter name="browser" value="chrome" />
+		<parameter name="isBrowserStack" value="true" />
+		<parameter name="isMobile" value="false" />
+		<parameter name="device" value="" />
+		<classes>
+			<class name="com.qa.browserstackscraping.test.ElPaisTest" />
+		</classes>
+	</test>
+
+	<test name="Desktop_Safari_Mac">
+		<parameter name="browser" value="safari" />
+		<parameter name="isBrowserStack" value="true" />
+		<parameter name="isMobile" value="false" />
+		<parameter name="device" value="" />
+		<classes>
+			<class name="com.qa.browserstackscraping.test.ElPaisTest" />
+		</classes>
+	</test>
+
+	<test name="Mobile_iPhone13_iOS">
+		<parameter name="browser" value="chrome" />
+		<parameter name="isBrowserStack" value="true" />
+		<parameter name="isMobile" value="true" />
+		<parameter name="device" value="iPhone 13" />
+		<classes>
+			<class name="com.qa.browserstackscraping.test.ElPaisTest" />
+		</classes>
+	</test>
+
+	<test name="Mobile_GalaxyS21_Android">
+		<parameter name="browser" value="chrome" />
+		<parameter name="isBrowserStack" value="true" />
+		<parameter name="isMobile" value="true" />
+		<parameter name="device" value="Samsung Galaxy S21" />
+		<classes>
+			<class name="com.qa.browserstackscraping.test.ElPaisTest" />
+		</classes>
+	</test>
+	<test name="Mobile_iPhone14_iOS">
+		<parameter name="browser" value="safari" />
+		<parameter name="isBrowserStack" value="true" />
+		<parameter name="isMobile" value="true" />
+		<parameter name="device" value="iPhone 14" />
+		<classes>
+			<class name="com.qa.browserstackscraping.test.ElPaisTest" />
+		</classes>
+	</test>
+</suite>
